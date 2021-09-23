@@ -1,0 +1,36 @@
+name: New Issue Creation
+description: Create a new issue including time expectations
+title: "[Issue]: "
+labels: ["issue"]
+assignee: [""]
+assignees:
+  - []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for creating this new issue!
+  - type: input
+    id: body
+    attributes:
+      label: description of issue
+      description: Please explain what this issue is about.
+      placeholder: ex. issue explanation
+    validations:
+      required: true
+  - type: input
+    id: estimated-hours
+    attributes:
+      label: How long do you expect it will take for this issue to be resolved?
+      description: Please enter the amount of hours you expect to devote to resolving this issue.
+      placeholder: How many hours do you estimate?
+    validations:
+      required: true
+  - type: input
+    id: expected-delivery
+    attributes:
+      label: When do you expect to deliver this solution?
+      description: Please enter the adate when you expect to have a solution for the issue.
+      placeholder: This issue should be resolved by...
+    validations:
+      required: true
