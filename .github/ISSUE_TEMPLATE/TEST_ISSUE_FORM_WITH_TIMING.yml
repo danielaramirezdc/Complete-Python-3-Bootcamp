@@ -2,7 +2,6 @@ name: New Issue Creation
 description: Create a new issue including time expectations
 title: "[Issue]: "
 labels: ["issue"]
-assignee: [""]
 assignees:
   - []
 body:
